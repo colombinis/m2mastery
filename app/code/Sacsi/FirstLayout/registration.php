@@ -4,6 +4,6 @@ use Magento\Framework\Component\ComponentRegistrar;
 
 ComponentRegistrar::register(
     ComponentRegistrar::MODULE,
-    'Sacsi_FirstPage',
+    'Sacsi_FirstLayout',
     __DIR__
 );

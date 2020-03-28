@@ -10,6 +10,9 @@
         "preferred-install": "dist",
         "sort-packages": true
     },
+    "scripts":{
+        "d:generated":"rm -rf ./generated/metadata/* ./generated/code/*"
+    },
     "require": {
         "magento/product-community-edition": "2.3.4"
     },
