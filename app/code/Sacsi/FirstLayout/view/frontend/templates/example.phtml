@@ -1,2 +1,15 @@
-<h1>Mi Primer  Template</h1>
-<p>With Layout support</p>
+<?php
+use Magento\Framework\View\Element\Template; //para que el ide nos ayude con el intellisense
+?>
+
+<h1>Parametros desde el controller</h1>
+
+<code>
+    <pre>
+<?php
+
+$data = $block->getData();
+print_r($data);
+
+?>
+</pre></code>

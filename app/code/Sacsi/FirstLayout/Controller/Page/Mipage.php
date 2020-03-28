@@ -18,6 +18,14 @@ class Mipage extends Action
 {
     public function execute()
     {
-        return $this->resultFactory->create( ResultFactory::TYPE_PAGE);
+        /** @var Page $page */
+        $page = $this->resultFactory->create( ResultFactory::TYPE_PAGE);
+        $block = $page->getLayout()->getBlock('sacsi.first.layout.example');
+
+        //Seteamos valores que queremos obtener en nuestro bloque
+        $block->setData('array1', ['uno','dos','tres']);
+        $block->setData('parameter1', 'Data from the Controller for parameter1');
+
+        return $page;
     }
 }
